@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <script src="lib/onsenui/js/onsenui.min.js"></script>
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <script src="js/materialize.min.js"></script>
+
+  <script>
+    ons.ready(function() {
+      console.log("Onsen UI is ready!");
+    });
+
+    if (ons.platform.isIPhoneX()) {
+      document.documentElement.setAttribute('onsflag-iphonex-portrait', '');
+      document.documentElement.setAttribute('onsflag-iphonex-landscape', '');
+    }
+  </script>
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper light-blue accent-3">
+      <a href="#" class="brand-logo ">Listar</a>
+    </div>
+  </nav>
+<br
+<div class="row">
+     <div class="input-field col s12">
+    <select id="selecionar">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+    <label>Materialize Select</label>
+  </div>
+    <div class="input-field col s12">
+      <input value="" id="nome" type="text" class="validate">
+      <label class="active" for="nome">Nome</label>
+    </div>
+  </div>
+<div class="row">
+    <div class="input-field col s12">
+      <input value="" id="email" type="email" class="validate">
+      <label class="active" for="email">Email</label>
+    </div>
+  </div>
+<div class="row">
+    <div class="input-field col s12">
+      <input value="" id="senha" type="password" class="validate">
+      <label class="active" for="senha">Senha</label>
+    </div>
+  </div>
+ <div class="col-md-12 center">
+  <a href="index.html" <button class="btn waves-effect waves-light light-blue darken-4 col-sm-4" type="submit" name="Voltar">Voltar
+    <i class="material-icons right"></i>
+  </button></a>
+  <button class="btn waves-effect waves-light light-blue darken-4 col-sm-4" type="submit" name="Salvar">Salvar
+    <i class="material-icons right"></i>
+  </button>
+ </div>
+</body>
+</html>
