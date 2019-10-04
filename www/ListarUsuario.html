@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/materialize.min.css">
+  <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/materialize.min.js"></script>
 
   <script>
@@ -23,6 +24,9 @@
       document.documentElement.setAttribute('onsflag-iphonex-portrait', '');
       document.documentElement.setAttribute('onsflag-iphonex-landscape', '');
     }
+    $(document).ready(function(){
+      $('select').formSelect();
+    });
   </script>
 </head>
 <body>
